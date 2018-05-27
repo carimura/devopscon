@@ -1,0 +1,12 @@
+apiVersion: config.istio.io/v1alpha2
+kind: RouteRule
+metadata:
+  name: demoapp-service
+  namespace: default
+spec:
+  destination:
+    name: demoapp-service
+  route:
+  - labels:
+      version: v2
+    weight: 100
