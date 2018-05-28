@@ -1,5 +1,8 @@
 name: v2
-version: 0.0.14
+version: 0.0.28
 runtime: go
 entrypoint: ./func
-format: json
+format: default
+headers:
+  content-type:
+  - text/html
